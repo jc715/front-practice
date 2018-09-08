@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        /*标签选择器*/
+        /*p{
+            color: #61dc37;
+        }*/
+
+        /*id选择器*/
+        #element_id{
+            color: aliceblue;
+        }
+
+        /*类选择器*/
+        .class-name{
+            color: aqua;
+        }
+
+        /*标签后代选择器*/
+        /*div span{
+            color: blue;
+        }*/
+
+        /*子元素选择器*/
+        /*div>div{
+            color: yellow;
+        }*/
+
+        /*并集选择器*/
+        #intersection_id.intersection_class{
+            color: crimson;
+        }
+
+        /*相邻兄弟选择器*/
+        .adjacent_brother_a+.adjacent_brother_b{
+            color: blueviolet;
+        }
+
+        /*通用兄弟选择器*/
+        .common_brother_a~.common_brother_b{
+            color: blue;
+        }
+
+        /*序选择器*/
+        /*div:last-child{
+            color: darkgoldenrod;
+        }*/
+
+        /*属性选择器*/
+        input[value|="CSS2value以什么开头"]{
+            width: 300px;
+        }
+
+        input[value^="CSS3 value以什么开头"]{
+            width: 300px;
+        }
+
+        input[value$="CSS3value以什么结尾"]{
+             width: 300px;
+        }
+
+        input[value~="CSS2包含value"]{
+            width: 300px;
+        }
+
+        input[value*="CSS3包含value"]{
+            width: 300px;
+        }
+
+        /*通配选择器*/
+        /**{
+            color: darkblue;
+        }*/
+    </style>
+</head>
+<body>
+    <p>标签选择器</p>
+
+    <br/>
+
+    <div id="element_id">id选择器</div>
+
+    <br/>
+
+    <div class="class-name">类选择器</div>
+
+    <br/>
+
+    <div>
+        <span>标签后代选择器</span>
+        <div>子元素选择器</div>
+    </div>
+
+    <br/>
+
+    <div id="intersection_id" class="intersection_class">并集选择器</div>
+
+    <br/>
+
+    <div class="adjacent_brother_a">相邻兄弟选择器a</div>
+    <div class="adjacent_brother_b">相邻兄弟选择器b-1</div>
+    <div class="adjacent_brother_b">相邻兄弟选择器b-2</div>
+
+    <br/>
+
+    <div class="common_brother_a">通用兄弟选择器a</div>
+    <div class="common_brother_b">通用兄弟选择器b-1</div>
+    <div class="common_brother_b">通用兄弟选择器b-2</div>
+
+    <br/>
+
+    <div>序选择器</div>
+
+    <br/>
+
+    <input type="text" value="CSS2value以什么开头" />
+    <input type="text" value="CSS3 value以什么开头XXXXXXXX" />
+
+    <br/>
+
+    <input type="text" value="XXXXXXXCSS3value以什么结尾" />
+
+    <br/>
+
+    <input type="text" value="XXXXXXX CSS2包含value XXXXXXX" />
+    <input type="text" value="XXXXXXXCSS3包含valueXXXXXXX" />
+</body>
+</html>

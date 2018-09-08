@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+    <script text="/html">
+        // 声明方式
+
+        // 1.函数式声明
+        function func(){
+            console.log("函数式声明");
+        }
+        func();
+
+        // 2.表达式声明
+        var expressionFunc = function(){
+            console.log("表达式声明");
+        }
+        expressionFunc();
+
+        // 3.构造函数声明
+        var constructionFunc = new Function("console.log('构造函数声明');");
+        constructionFunc();
+    </script>
+    <script text="/html">
+        // 递归函数
+
+        // 求N个数的累加
+        function accumulate(num){
+            if (num == 1) {
+                return 1;
+            }
+            return num + accumulate(num - 1);
+        }
+
+        console.log(accumulate(5));
+    </script>
+
+</body>
+</html>

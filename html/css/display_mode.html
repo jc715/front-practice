@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p> ---显示模式--- </p>
+    <!--行级元素-->
+    <div style="background-color: crimson">行级元素</div>
+
+    <!--块级元素-->
+    <span style="background-color: blue">块级元素</span>
+
+    <p> ---显示模式转换--- </p>
+
+    <p>display:block</p>
+    <span style="background-color: blue">块级元素-1</span>
+    <span style="background-color: yellow;display: block;">块级元素-2</span>
+    <span style="background-color: red">块级元素-3</span>
+
+    <p>display:inline</p>
+    <div>
+        <div style="background-color: blue;display: inline;">块级元素-1</div>
+        <div style="background-color: yellow;display: inline;height: 200px;">块级元素-2</div>
+        <div style="background-color: red;display: inline;">块级元素-3</div>
+    </div>
+
+    <p>display:inline-block</p>
+    <div>
+        <div style="background-color: blue;display: inline-block;">块级元素-1</div>
+        <div style="background-color: yellow;display: inline-block;height: 50px;">块级元素-2</div>
+        <div style="background-color: red;display: inline-block;">块级元素-3</div>
+    </div>
+</body>
+</html>

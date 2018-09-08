@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p>--- video标签 ---</p>
+
+    <!--
+        src: 告诉video标签需要播放的视频地址
+        autoplay: 告诉video标签是否需要自动播放视频
+        controls: 告诉video标签是否需要显示控制条
+        poster: 告诉video标签视频没有播放之前显示的占位图片
+        loop: 告诉video标签循环播放视频. 一般用于做广告视频
+        preload: 告诉video标签预加载视频, 但是需要注意preload和autoplay相冲, 如果设置了autoplay属性, 那么preload属性就会失效
+        muted:告诉video标签视频静音
+        width/height: 和img标签中的一模一样
+     -->
+    <p>格式一</p>
+    <video src="//pic.ibaotu.com/00/63/22/31Q888piC7wM.mp4"
+           controls="controls" poster="../../images/test.jpg" loop="loop" preload="none" width="400" height="400"
+            >
+    </video>
+
+    <p>格式二</p>
+    <video controls="controls" width="400" height="400">
+        <source src="//pic.ibaotu.com/00/63/22/31Q888piC7wM.mp4" type="video/mp4"  />
+    </video>
+
+
+    <p>--- audio标签 ---</p>
+
+    <p>格式一</p>
+    <audio src="//pic.ibaotu.com/00/63/22/31Q888piC7wM.mp4" controls="controls">
+    </audio>
+
+
+    <p>格式二</p>
+    <audio controls="controls">
+        <source src="//pic.ibaotu.com/00/63/22/31Q888piC7wM.mp4" type="video/mp4" >
+    </audio>
+
+    <p>--- 详情和概要标签 ---</p>
+    <details>
+        <summary>概要信息</summary>
+        详细信息
+    </details>
+
+    <p>--- marquee标签 ---</p>
+
+    <!--
+        direction: 设置滚动方向 left/right/up/down
+        scrollamount: 设置滚动速度, 值越大就越快
+        loop: 设置滚动次数, 默认是-1, 也就是无限滚动
+        behavior: 设置滚动类型 slide滚动到边界就停止, alternate滚动到边界就弹回
+    -->
+    <marquee direction="right" scrollamount="20" behavior="alternate">跑马灯内容</marquee>
+
+    <p>--- 标记标签 ---</p>
+
+    <strongr>着重内容</strongr>
+
+    <ins>新插入文本</ins>
+
+    <em>强调内容</em>
+
+    <del>被删除的内容</del>
+
+    <p>--- 特殊符号 ---</p>
+    小于: &lt; <br/>
+    大于: &gt; <br/>
+    空格: &nbsp; <br/>
+</body>
+</html>

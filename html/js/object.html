@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script text="/html">
+        // 字面量
+        var person = {
+            name : "张三",
+            age : 30,
+            friends : ["李四","王五","赵六"],
+            say : function () {
+                console.log("Hello");
+            }
+        }
+
+        console.log(person.name);
+        person.say();
+
+        // 遍历对象
+        for(var key in person){
+            console.log(typeof person[key]);
+            console.log(person[key]);
+        }
+    </script>
+    <script text="/html">
+        // JSON
+        var person = {
+            "name" : "张三",
+            "age" : 30,
+            "friends" : ["李四","王五","赵六"],
+            "say" : function () {
+                console.log("Hello");
+            }
+        }
+        person.say();
+    </script>
+    <script text="/html">
+        // 构造函数创造对象
+
+        // 方式一
+        function Person(){
+            var obj = new Object();
+
+            obj.name = null;
+            obj.age = null;
+            obj.sayHello = function(){
+                console.log("Hello World");
+            }
+            return obj;
+        }
+
+        var p = new Person();
+        p.name = "小王";
+        p.age = 30;
+        p.sayHello();
+
+        // 方式二
+        function Dog(name, age){
+            this.name = name;
+            this.age = age;
+            this.eat = function(someThing){
+                console.log(this.name + "吃" + someThing);
+            }
+        }
+
+        var dog = new Dog("小d", 2);
+        dog.eat("骨头");
+
+        // 方式三
+        function Bird(option){
+            this.name = option.name;
+            this.age = option.age;
+            this.eat = function(someThing){
+                console.log(this.name + "吃" + someThing);
+            }
+        }
+        var bird = new Bird({name:"小花", age:1.5});
+        console.log(bird.name);
+
+        // 优化写法
+        function SuperMan(option){
+            this._init(option);
+        }
+
+        SuperMan.prototype = {
+            _init : function(option) {
+                this.name = option.name;
+                this.age = option.age;
+            },
+            fly : function() {
+                console.log("fly");
+            }
+        }
+
+    </script>
+    <script text="/html">
+        // 构造函数 关键字
+        // prototype 作用:给类添加对象
+        Array.prototype.run = function(){
+            console.log("running");
+        }
+
+        var arr1 = new Array();
+        arr1.run();
+        var arr2 = new Array();
+        arr2.run();
+
+        // constructor 作用:找到该对象的创建方法
+        console.log(arr1.constructor);
+
+    </script>
+    <script text="/html">
+        // 内置对象
+
+    </script>
+    <script text="/html">
+        // BOM(Browser Object)
+
+        // DOM(Document Object)
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script text="/html">
+        // 作用域
+        {
+            var blockValue = "块级作用域";
+        }
+
+        var globalValue = "全局变量";
+
+        function fun(){
+            var partValue = "局部变量";
+            // noVarValue = "没有var声明的变量等于全局变量"; // 方法被调用时该变量才会被创建
+        }
+    </script>
+
+    <script text="/html">
+        // JS中for循环变量的特殊用法
+        function forFunc(){
+            for(var i=0; i<10; i++){
+
+            }
+            console.log(i);
+        }
+        forFunc();
+    </script>
+    <script text="/html">
+        // 局部声明提前特性
+        var num = 10;
+        function func(){
+            console.log(num);
+            var num = 20;
+        }
+        func(); // 结果等于undefined
+    </script>
+    <script text="/html">
+        // 批量声明陷阱 结果为报错 a 未被声明
+        func();
+        console.log(a);
+        console.log(b);
+        console.log(c);
+        function func(){
+            var a = b = c = 100;
+            console.log(a);
+            console.log(b);
+            console.log(c);
+        }
+    </script>
+</body>
+</html>

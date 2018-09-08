@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <form action="/" method="post">
+        <p>--- 明文输入框 ---</p>
+        <input type="text" />
+
+        <p>--- 暗文输入框 ---</p>
+        <input type="password" />
+
+        <p>--- 单选 ---</p>
+        <input type="radio" name="sex" checked="checked" /> 男
+        <input type="radio" name="sex" /> 女
+
+        <p>--- 多选 ---</p>
+        <input type="checkbox" name="fruit"  /> 西瓜
+        <input type="checkbox" name="fruit" /> 苹果
+        <input type="checkbox" name="fruit" checked="checked" /> 香蕉
+
+        <p>--- label标签 ---</p>
+        <label for="account">帐号:</label><input type="text" id="account" />
+
+        <p>--- 按钮 ---</p>
+        <input type="button" value="我是一个按钮" />
+
+        <p>--- 图片按钮 ---</p>
+        <input type="image" src="../../images/pic_btn.png" />
+
+        <p>--- 重置按钮 ---</p>
+        <input type="reset" />
+
+        <p>--- 提交按钮 ---</p>
+        <input type="submit" />
+
+        <p>--- 隐藏域 ---</p>
+        <input type="hidden" />
+
+        <p>--- 取色板 ---</p>
+        <input type="color" />
+
+        <p>--- 日期选择 ---</p>
+        <input type="date" />
+
+        <p>--- 数据列表 ---</p>
+        手机输入选择：
+        <input type="text"  list="phone_list"/>
+        <datalist id="phone_list">
+            <option>小米</option>
+            <option>华为</option>
+            <option>苹果</option>
+        </datalist>
+
+        <p>--- 多行文本框 ---</p>
+        <textarea cols="10" rows="5">默认值</textarea>
+
+        <p>--- 下拉列表 ---</p>
+        手机选择:
+        <select>
+            <option>小米</option>
+            <option>华为</option>
+            <option selected="selected" >苹果</option>
+        </select>
+
+        <p>--- 分组展示下拉列表 ---</p>
+        手机选择:
+        <select>
+            <optgroup label="国产">
+                <option>小米</option>
+                <option>华为</option>
+            </optgroup>
+            <optgroup label="进口">
+                <option>苹果</option>
+                <option>三星</option>
+            </optgroup>
+        </select>
+    </form>
+</body>
+</html>
