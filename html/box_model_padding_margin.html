@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>内外边距</title>
+
+    <style>
+        #box_model_padding .big_box {
+            width: 500px;
+            height: 500px;
+            background-color: red;
+            padding: 150px;
+            box-sizing: border-box;
+         }
+
+        #box_model_padding .small_box {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+
+        }
+
+        /* 如果两个盒子是嵌套关系，里面的盒子添加外边距后，外面的盒子也会被顶下来。
+           *解决此现象需要将外面的盒子添加上边框
+        */
+
+        #box_model_margin .big_box {
+            width: 500px;
+            height: 500px;
+            background-color: red;
+            border: solid;
+        }
+
+        #box_model_margin .small_box {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            margin: 150px auto;
+        }
+
+    </style>
+</head>
+<body>
+    <!--使小盒子居中于大盒子-->
+
+    <div id="box_model_padding">
+        <div class="big_box">
+            <div class="small_box"></div>
+        </div>
+
+    </div>
+    <hr/>
+    <div id="box_model_margin">
+        <div class="big_box">
+            <div class="small_box"></div>
+        </div>
+    </div>
+</body>
+</html>

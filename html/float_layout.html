@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动流布局</title>
+
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+
+        body {
+            width: 980px;
+            height: 100%;
+            margin: 0 auto;
+        }
+
+        #north {
+            width: 100%;
+            height: 100px;
+        }
+
+        #north .box1 {
+            width: 250px;
+            height: 100px;
+            background-color: #f8b6c9;
+            float: left;
+        }
+
+        #north .box2 {
+            width: 150px;
+            height: 50px;
+            background-color: #8cd2e9;
+            float: right;
+        }
+
+        #north .box3 {
+            width: 650px;
+            height: 50px;
+            background-color: #740079;
+            float: right;
+        }
+
+        #center {
+            width: 100%;
+            height: 400px;
+            margin-top: 10px;
+        }
+
+        #center .box1 {
+            float: left;
+        }
+
+        #center .box1 .box1_1{
+            width: 320px;
+            height: 400px;
+            background-color: yellow;
+            float: left;
+        }
+
+        #center .box2 {
+            width: 650px;
+            height: 400px;
+            float: right;
+            box-sizing: border-box;
+
+        }
+
+        #center .box2 .box2_1 {
+            width: 100%;
+        }
+
+        #center .box2 .box2_1_1 {
+            float: left;
+        }
+
+        #center .box2 .box2_1_1_1 {
+            width: 400px;
+            height: 200px;
+            background-color: #ee008f;
+        }
+
+        #center .box2 .box2_1_1_2 {
+            width: 400px;
+            height: 140px;
+            background-color: #12cafc;
+            margin-top: 10px;
+        }
+
+        #center .box2 .box2_1_2 {
+            float: right;
+        }
+
+        #center .box2 .box2_1_2_1 {
+            width: 240px;
+            height: 350px;
+            background-color: #a0d938;
+        }
+
+
+        #center .box2 .box2_2 {
+            float: right;
+        }
+
+        #center .box2 .box2_2 {
+            width: 650px;
+            height: 40px;
+            background-color: #b48808;
+            float: right;
+            margin-top: 10px;
+        }
+
+        #south .box1 {
+            width: 980px;
+            height: 40px;
+            background-color: #f15249;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="north">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+    <div id="center">
+        <div class="box1">
+            <div class="box1_1"></div>
+        </div>
+        <div class="box2">
+            <div class="box2_1">
+                <div class="box2_1_1">
+                    <div class="box2_1_1_1"></div>
+                    <div class="box2_1_1_2"></div>
+                </div>
+                <div class="box2_1_2">
+                    <div class="box2_1_2_1"></div>
+                </div>
+            </div>
+            <div class="box2_2">
+                <div class="box2_2_1"></div>
+            </div>
+        </div>
+    </div>
+    <div id="south">
+        <div class="box1"></div>
+    </div>
+</body>
+</html>

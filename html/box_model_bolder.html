@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒模型边框</title>
+
+    <style>
+        #box_model_bolder div {
+            width: 100px;
+            height: 100px;
+        }
+
+        #box_model_bolder .box1 {
+            border: 4px solid black;
+        }
+
+        #box_model_bolder .box2 {
+            border-width: 4px;
+            border-style: solid;
+            border-color: red green blue purple;
+        }
+
+        #box_model_bolder .box3 {
+            border: 4px solid red;
+            border-right-style: dashed;
+        }
+
+        #box_model_bolder .box4 {
+            border: 4px red;
+            border-style: solid dashed solid dashed;
+        }
+
+        #box_model_bolder .box5 {
+            border: 4px solid black;
+            border-bottom: none;
+        }
+
+        #box_model_bolder .box6 {
+            border: 50px solid white;
+            width: 0px;
+            border-top-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="box_model_bolder">
+        <div class="box1"></div>
+        <hr/>
+        <div class="box2"></div>
+        <hr/>
+        <div class="box3"></div>
+        <hr/>
+        <div class="box4"></div>
+        <hr/>
+        <div class="box5"></div>
+        <hr/>
+        <div class="box6"></div>
+    </div>
+</body>
+</html>
