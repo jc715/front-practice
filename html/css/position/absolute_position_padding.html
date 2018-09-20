@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绝对定位-忽略父元素padding</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        #absolute_position_padding {
+            width: 400px;
+            height: 400px;
+            background-color: red;
+            padding: 30px;
+            border: 2px solid black;
+            position: absolute;
+        }
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+    </style>
+</head>
+<body>
+<div id="absolute_position_padding">
+    <div class="box1"></div>
+</div>
+</body>
+</html>
