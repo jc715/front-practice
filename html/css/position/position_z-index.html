@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定位流-z-index属性</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        #p_box_1 {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: relative;
+            z-index: 2;
+        }
+        #s_box_1 {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            position: absolute;
+            right: -100px;
+            bottom: -50px;
+            z-index: 1;
+        }
+        #p_box_2 {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            position: relative;
+            z-index: 3;
+        }
+        #s_box_2 {
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            position: absolute;
+            right: -150px;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="p_box_1">
+        <div id="s_box_1"></div>
+    </div>
+    <div id="p_box_2">
+        <div id="s_box_2"></div>
+    </div>
+</body>
+</html>
