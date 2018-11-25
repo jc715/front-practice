@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商城导航</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        a {
+            text-decoration:none;
+            color: white;
+        }
+        a:hover {
+            color: #ff050a;
+            background-color: yellow;
+        }
+        a:active {
+            color: #ff8e93;
+        }
+        #store_nav ul {
+            width: 910px;
+            margin: 50px auto;
+            list-style: none;
+            text-align: center;
+            line-height: 50px;
+            position: relative;
+        }
+        #store_nav li {
+            width: 100px;
+            height: 50px;
+            float: left;
+            background-color: orange;
+            position: relative;
+        }
+        #store_nav .hot-ico {
+            display: block;
+            width: 21px;
+            height: 13px;
+            background-image: url(../../images/hot-ico.png);
+            position: absolute;
+            left: 50%;
+            top:10%;
+        }
+        #store_nav a {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="store_nav">
+        <ul>
+            <li><a href="www.a.com">秒杀</a></li>
+            <li><a href="www.b.com">优惠券</a></li>
+            <li><a href="www.c.com">PLUS会员</a></li>
+            <li><a href="www.d.com">闪购</a></li>
+            <li>
+                <a href="www.e.com">拍卖</a>
+                <span class="hot-ico"></span>
+            </li>
+            <li><a href="www.f.com">京东服饰</a></li>
+            <li><a href="www.g.com">京东超市</a></li>
+            <li><a href="www.h.com">全球购</a></li>
+            <li><a href="www.r.com">京东金融</a></li>
+        </ul>
+    </div>
+</body>
+</html>
