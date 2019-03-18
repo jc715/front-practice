@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+</head>
+<body>
+<div id="innerHtmlDiv"></div>
+
+
+<script>
+    document.getElementById('innerHtmlDiv').innerHTML = 'innerHtmlDiv';
+
+    var innerHtmlDiv = document.getElementById('innerHtmlDiv');
+    console.log(innerHtmlDiv.nodeType);
+</script>
+</body>
+</html>

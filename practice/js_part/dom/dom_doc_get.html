@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>节点获取</title>
+</head>
+<body>
+<div id="get_doc_div">
+    <div name="child" id="get_doc_child_div_1">
+        <span>a span element</span>
+    </div>
+    <div name="child" id="get_doc_child_div_2"></div>
+    <div name="child" id="get_doc_child_div_3"></div>
+</div>
+
+<script>
+    // 获取节点
+    console.log('***获取节点***');
+    var getByIdDoc = document.getElementById('get_doc_div');
+    console.log(getByIdDoc);
+
+    var getByNameDocs = document.getElementsByName('child');
+    console.log(getByNameDocs);
+
+    var getByTagDocs = document.getElementsByTagName('span');
+    console.log(getByTagDocs);
+
+
+    console.log(getByIdDoc.firstChild);
+    console.log(getByIdDoc.lastChild);
+    console.log(getByIdDoc.childNodes);
+
+    var child2Doc = document.getElementById('get_doc_child_div_2');
+    console.log(child2Doc.previousSibling);
+    console.log(child2Doc.nextSibling);
+    console.log(child2Doc.parentNode);
+
+    // 节点操作
+</script>
+</body>
+</html>

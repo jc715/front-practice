@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>字符串</title>
+</head>
+<body>
+<script>
+    // 通过下标获取值
+    console.log('***通过下标获取值***');
+
+    var indexStr = '通过下标获取值';
+    console.log(indexStr[3]);
+
+    // 字符串中使用引号
+    console.log('***字符串中使用引号***');
+
+    var quotationStr1 = 'quotationStr"1"';
+    var quotationStr2 = 'quotationStr\'1\'';
+
+    // 获取字符串长度
+    console.log('***获取字符串长度***');
+
+    var lenStr = '获取字符串长度';
+    console.log(lenStr);
+
+    // 查找字符串
+    console.log('***查找字符串***');
+
+    var searchStr = '查找字符串';
+    var searchNum = searchStr.indexOf('字');
+    console.log(searchNum);
+
+    // 内容匹配
+    console.log('***内容匹配***');
+
+    var matchStr = '内容匹配';
+    console.log(matchStr.match('匹'));
+    console.log(matchStr.match('四'));
+
+    // 替换内容
+    console.log('***替换内容***');
+
+    var replaceStr = '替换内容';
+    console.log(replaceStr.replace('内容', '**'));
+
+    // 大小写转换
+    console.log('***大小写转换***');
+
+    var upperCaseStr = 'upperCaseStr';
+    console.log(upperCaseStr.toUpperCase());
+
+    var lowerCaseStr = 'lowerCaseStr';
+    console.log(lowerCaseStr.toLowerCase());
+
+    // 字符串转数组
+    console.log('***字符串转数组***');
+
+    var splitStr = '字,符,串,转,数,组';
+    console.log(splitStr.split(','));
+
+
+    // 字符串拼接
+    console.log('***字符串拼接***');
+
+    var concatStr = 'concatStrA';
+    console.log(concatStr.concat('BCD'));
+
+    // 字符串截取
+    console.log('***字符串截取***');
+
+    var sliceStr = 'sliceStr';
+    console.log(sliceStr.slice(0, 3));
+    console.log(sliceStr);
+
+    // 字符串比较
+    console.log('***字符串比较***');
+
+    var compareStrA = 'compareStrAB';
+    var compareStrB = 'compareStrABC';
+    console.log(compareStrA.localeCompare(compareStrB));
+
+    // 字符串查询
+    console.log('***字符串查询***');
+
+    var charAtStr = "charAtStr";
+    console.log(charAtStr.charAt(1));
+
+    var charCodeAtStr = "charCodeAtStr";
+    console.log(charCodeAtStr.charCodeAt(1));
+
+    var fromCharCodeStr = String.fromCharCode(104);
+    console.log(fromCharCodeStr);
+
+    // 字符串位置查找
+    var indexOfStr = 'indexOfStr';
+    console.log(indexOfStr.indexOf('x'));
+
+    var lastIndexOfStr = 'lastIndexOfStr';
+    console.log(lastIndexOfStr.indexOf('x'));
+</script>
+</body>
+</html>

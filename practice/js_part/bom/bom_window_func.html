@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>window对象</title>
+
+    <style>
+        hr {
+        }
+    </style>
+</head>
+<body>
+
+<button onclick="window.open('./bom_window_func.html')">open()</button>
+<button onclick="window.close()">close()</button>
+<button onclick="window.alert()">alert()</button>
+<button onclick="window.confirm()">confirm()</button>
+<button onclick="window.prompt()">prompt()</button>
+
+<hr/>
+
+<button onclick="openTestWindow('./bom_window.html')">openMoveWindow()</button>
+<button onclick="moveByTest(250, 250)">moveBy()</button>
+<button onclick="window.moveTo()">moveTo()</button>
+<button onclick="window.resizeBy()">resizeBy()</button>
+<button onclick="window.resizeTo()">resizeTo()</button>
+<button onclick="window.scrollBy()">scrollBy()</button>
+<button onclick="window.scrollTo()">scrollTo()</button>
+
+<hr/>
+
+<button onclick="window.focus()">focus()</button>
+<button onclick="window.blur()">blur()</button>
+
+<hr/>
+
+<button onclick="window.print()">print()</button>
+
+<hr/>
+
+
+<button onclick="window.clearInterval()">clearInterval()</button>
+<button onclick="window.clearTimeout()">clearTimeout()</button>
+<script>
+    var moveWindow;
+    function openTestWindow() {
+        moveWindow = window.open('','','width=200,height=100');
+    }
+    function moveByTest(x, y) {
+        moveWindow.moveBy(x, y);
+    }
+</script>
+</body>
+</html>

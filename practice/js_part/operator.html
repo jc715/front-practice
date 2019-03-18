@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>运算符</title>
+</head>
+<body>
+<script>
+    // 逻辑运算符
+    console.log('***逻辑运算符***');
+
+    console.log('---&&---');
+    var andObjA = new Object('andObjA');
+
+    var andObjB = new Object('andObjB');
+
+    console.log(andObjA && andObjB);
+
+
+    // 对象运算符
+    console.log('***对象运算符***');
+
+    console.log('---in---');
+
+    var forInArr = [1, 2, 3];
+    for (num in forInArr) {
+        console.log(num);
+    }
+
+    var inObj = {
+        name : 'JC'
+    }
+    console.log('name' in inObj);
+
+    var inArr = [1, 2, 3];
+    console.log(0 in inArr);
+
+    console.log('---instanceof---');
+
+    var instanceofObj = new Object();
+    console.log(instanceofObj instanceof Object);
+
+    console.log('---delete---');
+
+    deleteGlobalVar = 'deleteGlobalVar';
+    console.log(deleteGlobalVar);
+    delete deleteGlobalVar;
+    // console.log(deleteGlobalVar);
+
+    var deleteObjAttr = {
+        name : 'JC'
+    }
+    console.log(deleteObjAttr.name);
+    delete deleteObjAttr.name;
+    console.log(deleteObjAttr.name);
+
+    console.log('---,---');
+    var a = 1, b = 2
+</script>
+</body>
+</html>

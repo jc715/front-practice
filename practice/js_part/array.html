@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数组</title>
+</head>
+<body>
+<script>
+    // 创建数组
+    console.log('***创建数组***');
+    var arr = new Array(1, 2, 3);
+    console.log(arr.constructor);
+
+    console.log(arr.constructor == Array);
+
+    // 添加元素
+    console.log('***添加元素***');
+    var insertArr = new Array();
+    insertArr.push('1');
+    insertArr.unshift('2');
+
+    var insertArrB = new Array('3');
+    var concatArr = insertArr.concat(insertArrB);
+
+    console.log(concatArr);
+
+    // 删除元素
+    console.log('***删除元素***');
+    var deleteArr = new Array(1, 2, 3);
+
+    console.log(deleteArr.pop());
+
+    console.log(deleteArr.shift());
+
+
+    // 迭代数组
+    console.log('***迭代数组***');
+
+    console.log('---forEach---');
+    var forEachArr = Array(1, 2, 3);
+    forEachArr.forEach(function (value, index, arr) {
+        console.log(this);
+        console.log(value);
+    }, this)
+
+
+    console.log('---every---');
+    var everyArr = Array(10, 11, 12);
+
+    var everyResult = everyArr.every(function (value) {
+        return value >= 10;
+    });
+
+    console.log(everyResult);
+
+
+    // 数组排序
+    console.log('***数组排序***');
+
+    var sortArr = new Array(5, 3, 2, 1);
+    console.log(sortArr.sort());
+
+    var sortCompareArr = new Array('张三三三', '小王', '小丽丽');
+    var sortCompareArrResult = sortCompareArr.sort(function compare(valueA, valueB) {
+        if (valueA.length < valueB.length) {
+            return -1;
+        } else if (valueA.length > valueB.length) {
+            return 1;
+        } else {
+            return 0;
+        }
+    });
+    console.log(sortCompareArrResult);
+
+
+    // 创建数组
+    console.log('***创建数组***');
+
+    // 创建数组
+    console.log('***创建数组***');
+
+
+    // 创建数组
+    console.log('***创建数组***');
+
+    // 创建数组
+    console.log('***创建数组***');
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>变量优先级</title>
+
+    <script>
+        priority_value = '全局变量'
+
+        function testPriority (priority_value) {
+
+            var priority_value = '局部变量';
+
+            alert(priority_value);
+        }
+
+        this.testPriority('参数变量');
+    </script>
+</head>
+<body>
+
+</body>
+</html>

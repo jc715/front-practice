@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>节点操作</title>
+    <style>
+        .div-color {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<div id="doc_operate_div">
+    <div id="old_div"></div>
+    <div id="bad_div"></div>
+</div>
+<script>
+    var createDivEle = document.createElement('div');
+    var createAttr = document.createAttribute('class');
+    createAttr.value = 'div-color';
+    createDivEle.setAttributeNode(createAttr);
+    var createTextNode = document.createTextNode('textContent');
+
+    var docOperateDiv = document.getElementById('doc_operate_div');
+    docOperateDiv.appendChild(createDivEle);
+    docOperateDiv.insertBefore(createTextNode, createDivEle);
+
+
+    var newDivEle = document.createElement('div');
+    newDivEle.id = 'new_div';
+    docOperateDiv.replaceChild(newDivEle, document.getElementById('old_div'));
+
+
+    var cloneNodes = docOperateDiv.cloneNode(true);
+    console.log(cloneNodes);
+
+    docOperateDiv.removeChild(document.getElementById('bad_div'));
+</script>
+</body>
+</html>
